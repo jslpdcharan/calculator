@@ -1,0 +1,79 @@
+/* Calculator.css */
+
+/* Center the calculator on the page */
+.calculator-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f5f5f5;
+}
+
+/* Calculator layout */
+.calculator {
+    background-color: #ffffff;
+    border-radius: 12px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+    width: 300px;
+    padding: 20px;
+    text-align: center;
+}
+
+/* Display area */
+.calculator-display {
+    font-size: 36px;
+    font-weight: bold;
+    color: #333;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    padding: 10px;
+    margin-bottom: 20px;
+    text-align: right;
+    overflow: hidden;
+    background-color: #fafafa;
+}
+
+/* Button grid layout */
+.calculator-buttons {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+}
+
+/* Buttons */
+.calculator-button {
+    font-size: 18px;
+    font-weight: bold;
+    color: #fff;
+    background-color: #007bff;
+    border: none;
+    border-radius: 8px;
+    padding: 15px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+/* Operator buttons */
+.calculator-button.operator {
+    background-color: #28a745;
+}
+
+/* Special buttons */
+.calculator-button.clear {
+    background-color: #dc3545;
+}
+
+/* Button hover effect */
+.calculator-button:hover {
+    background-color: #0056b3;
+}
+
+/* Button active effect */
+.calculator-button:active {
+    background-color: #003d80;
+}
+
+/* Adjust span button for "0" */
+.calculator-button.span-2 {
+    grid-column: span 2;
+}
